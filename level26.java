@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class level35 {
+class level26 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -10,11 +10,12 @@ class level35 {
         System.out.print("Enter second number: ");
         int number2 = sc.nextInt();
 
-        int temp = number1;
-        number1 = number2;
-        number2 = temp;
+        int quotient = number1 / number2;
+        int remainder = number1 % number2;
 
-        System.out.println("The swapped numbers are " 
-                + number1 + " and " + number2);
+        System.out.println("The Quotient is " + quotient
+                + " and Remainder is " + remainder
+                + " of two number " + number1
+                + " and " + number2);
     }
 }
